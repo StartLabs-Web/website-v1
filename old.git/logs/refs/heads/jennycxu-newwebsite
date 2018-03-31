@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 d6ad403c0326bbfbb3055f9a60f9d4f1f379c5bc Lisette Tellez <ltellez@mit.edu> 1471123941 -0400	branch: Created from refs/remotes/origin/jennycxu-newwebsite
-d6ad403c0326bbfbb3055f9a60f9d4f1f379c5bc 9f18b0938954438927a920246a4b5a3f87a0635a Lisette Tellez <ltellez@mit.edu> 1471208431 -0400	commit: moved index.html so that the startup.mit.edu page will work
-9f18b0938954438927a920246a4b5a3f87a0635a 59478665fa1897fb7594fa3a070d1961046e289a Lisette Tellez <ltellez@mit.edu> 1471209337 -0400	commit: renamed file so that startup.mit.edu works
-59478665fa1897fb7594fa3a070d1961046e289a 68fa791847bccd3dff183285e382af2f66c6a050 startup <startup@cats-whiskers.mit.edu> 1522459056 -0400	commit: whole web_scripts folder
