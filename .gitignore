@@ -1,0 +1,6 @@
+*.db
+*.zip
+*.pyc
+*.sw*
+staticfiles
+local_settings.py
