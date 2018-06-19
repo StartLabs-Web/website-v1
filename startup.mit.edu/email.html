@@ -28,9 +28,16 @@
     <form method="POST" action="https://formspree.io/startlabs-contact@mit.edu">
       <input type="email" name="email" placeholder="Your email">
       <br><br>
+      <select name="category">
+        <option value="advertising">Advertising</option>
+        <option value="community">Community</option>
+        <option value="sponsorship">Sponsorship</option>
+        <option value="question">Question</option>
+      </select>
+      <br><br>
       <textarea name="message" placeholder="Your message"></textarea>
       <br><br>
-      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="hidden" name="_subject" value="New email submitted to startlabs-contact@mit.edu" />
       <button type="submit">Send</button>
     </form>
   </center>
