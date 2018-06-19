@@ -4,3 +4,4 @@
 ** tell anthony it is formspreee, it is 1000/month
 * Changing to Flask
 ** Start small with a quick and dirty conversion
+** Can you even run Flask on MIT servers???
