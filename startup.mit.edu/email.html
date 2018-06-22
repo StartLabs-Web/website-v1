@@ -28,17 +28,20 @@
 
 	<div style="text-align: center;">
 	    <div style="display: inline-block; text-align: left;">
-				<form method="POST" action="https://formspree.io/startlabs-contact@mit.edu">
+				<!-- <form method="POST" action="https://formspree.io/startlabs-contact@mit.edu"> -->
+				<form method="POST" onSubmit="return onSubmitForm();" name="email-form">
 	      	<input type="email" class="form-control" name="email" placeholder="Your email">
 					<br>
 					<input type="subject" class="form-control" name="subject" placeholder="Subject">
 					<br>
-		      <!-- <select name="category" class="form-control">
-		        <option value="advertising">Advertising</option>
-		        <option value="community">Community</option>
-		        <option value="sponsorship">Sponsorship</option>
-		        <option value="question">Question</option>
-		      </select> -->
+		      <select name="category" class="form-control">
+						<option value="contact">Contact</option>
+						<option value="finance">Finance</option>
+						<option value="innovate">Innovate</option>
+						<option value="largeEvents">Large Events</option>
+						<option value="techTreks">Tech Treks</option>
+		        <option value="incube">Incube</option>
+		      </select>
 		      <br>
 		      <textarea name="message" placeholder="Your message" class="form-control" rows="10" cols="50"></textarea>
 		      <br><br>
@@ -60,6 +63,22 @@
 
 <script>
 // Dynamically change which url the email form sends a POST request to, based on the category chosen
+
+function onSubmitForm()
+{
+	var category = document.getElementsByName("category")[0].value;
+	var categoriesToLinks = {
+		// contact, finance, innovate, large events, tech treks, incube
+		"contact": "https://formspree.io/startlabs-contact@mit.edu",
+		"finance": "https://formspree.io/startlabs-finance@mit.edu",
+		"innovate": "https://formspree.io/startlabs-innovate@mit.edu",
+		"largeEvents": "https://formspree.io/startlabs-large-events@mit.edu",
+		"techTreks": "https://formspree.io/startlabs-tech-treks@mit.edu",
+		"incube": "https://formspree.io/incube@mit.edu",
+	};
+  document.getElementsByName("email-form")[0].action = categoriesToLinks[category];
+  return true;
+}
 
 
 
