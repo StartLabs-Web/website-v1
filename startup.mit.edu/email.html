@@ -49,7 +49,7 @@
 		      <br>
 		      <textarea name="message" placeholder="Your message" class="form-control" rows="10" cols="50"></textarea>
 		      <br><br>
-		      <input type="hidden" name="_subject" value="New email submitted to startlabs-contact@mit.edu" />
+		      <input type="hidden" name="_subject" value="default subject" />
 		      <center> <button type="submit">Send</button> </center>
 		    </form>
 	    </div>
@@ -79,7 +79,11 @@ function onSubmitForm()
 		"techTreks": "https://formspree.io/startlabs-tech-treks@mit.edu",
 		"incube": "https://formspree.io/incube@mit.edu",
 	};
-  document.getElementsByName("email-form")[0].action = categoriesToLinks[category];
+
+	var formspreeLink = categoriesToLinks[category];
+	document.getElementsByName("_subject")[0].value = "New email submitted to " + formspreeLink.substring(formspreeLink.lastIndexOf("/"), formspreeLink.length);
+
+  document.getElementsByName("email-form")[0].action = formspreeLink;
   return true;
 }
 
