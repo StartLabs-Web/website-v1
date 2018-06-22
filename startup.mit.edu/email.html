@@ -7,7 +7,6 @@
 	<title>StartLabs</title>
 
 	<link href="static/css/bootstrap.css" rel="stylesheet">
-
 	<link href="static/css/main.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -23,24 +22,32 @@
 
 <body>
 
+	<div class="logo">
+		<img src="static/images/startlabs-2017.png" width = "20%" height="20%" alt="logo">
+	</div>
 
-  <center>
-    <form method="POST" action="https://formspree.io/startlabs-contact@mit.edu">
-      <input type="email" name="email" placeholder="Your email">
-      <br><br>
-      <select name="category">
-        <option value="advertising">Advertising</option>
-        <option value="community">Community</option>
-        <option value="sponsorship">Sponsorship</option>
-        <option value="question">Question</option>
-      </select>
-      <br><br>
-      <textarea name="message" placeholder="Your message"></textarea>
-      <br><br>
-      <input type="hidden" name="_subject" value="New email submitted to startlabs-contact@mit.edu" />
-      <button type="submit">Send</button>
-    </form>
-  </center>
+	<div style="text-align: center;">
+	    <div style="display: inline-block; text-align: left;">
+				<form method="POST" action="https://formspree.io/startlabs-contact@mit.edu">
+	      	<input type="email" class="form-control" name="email" placeholder="Your email">
+					<br>
+					<input type="subject" class="form-control" name="subject" placeholder="Subject">
+					<br>
+		      <!-- <select name="category" class="form-control">
+		        <option value="advertising">Advertising</option>
+		        <option value="community">Community</option>
+		        <option value="sponsorship">Sponsorship</option>
+		        <option value="question">Question</option>
+		      </select> -->
+		      <br>
+		      <textarea name="message" placeholder="Your message" class="form-control" rows="10" cols="50"></textarea>
+		      <br><br>
+		      <input type="hidden" name="_subject" value="New email submitted to startlabs-contact@mit.edu" />
+		      <center> <button type="submit">Send</button> </center>
+		    </form>
+	    </div>
+	</div>
+
 
 
 
@@ -51,19 +58,10 @@
 <script src="static/js/nicescroll.js"></script>
 <script src="static/js/smoothscroll.js"></script>
 
-
 <script>
+// Dynamically change which url the email form sends a POST request to, based on the category chosen
 
 
-//  $(function() {
-//     $('.scrollto, .gototop').bind('click',function(event){
-// 		 var $anchor = $(this);
-// 		 $('html, body').stop().animate({
-//          scrollTop: $($anchor.attr('href')).offset().top
-//           }, 1500,'easeInOutExpo');
-//      event.preventDefault();
-//       });
-//   });
 
 
 </script>
