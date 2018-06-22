@@ -38,11 +38,12 @@
 					<input type="subject" class="form-control" name="subject" placeholder="Subject">
 					<br>
 		      <select name="category" class="form-control">
+						<option value="contact">Choose a Category</option>
 						<option value="contact">Contact</option>
-						<!-- <option value="finance">Finance</option> -->
-						<!-- <option value="innovate">Innovate</option> -->
-						<!-- <option value="largeEvents">Large Events</option> -->
-						<!-- <option value="techTreks">Tech Treks</option> -->
+						<option value="finance">Finance</option>
+						<option value="innovate">Innovate</option>
+						<option value="largeEvents">Large Events</option>
+						<option value="techTreks">Tech Treks</option>
 		        <option value="incube">Incube</option>
 		      </select>
 		      <br>
@@ -71,7 +72,6 @@ function onSubmitForm()
 {
 	var category = document.getElementsByName("category")[0].value;
 	var categoriesToLinks = {
-		// contact, finance, innovate, large events, tech treks, incube
 		"contact": "https://formspree.io/startlabs-contact@mit.edu",
 		"finance": "https://formspree.io/startlabs-finance@mit.edu",
 		"innovate": "https://formspree.io/startlabs-innovate@mit.edu",
