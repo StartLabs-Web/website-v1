@@ -81,7 +81,7 @@ function onSubmitForm()
 	};
 
 	var formspreeLink = categoriesToLinks[category];
-	document.getElementsByName("_subject")[0].value = "New email submitted to " + formspreeLink.substring(formspreeLink.lastIndexOf("/"), formspreeLink.length);
+	document.getElementsByName("_subject")[0].value = "New email submitted to " + formspreeLink.substring(formspreeLink.lastIndexOf("/") + 1, formspreeLink.length);
 
   document.getElementsByName("email-form")[0].action = formspreeLink;
   return true;
