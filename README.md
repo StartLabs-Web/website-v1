@@ -4,8 +4,8 @@
 
 Run 
 ```
-ssh your-kerberos@athena.dialup.mit.edu
-ssh startup@scripts
+$ ssh your-kerberos@athena.dialup.mit.edu
+$ ssh startup@scripts
 ```
 
-Navigate to the website repo with `cd startup.mit.edu` and then pull updates. 
+Navigate to the website repo with `$ cd startup.mit.edu` and then pull updates. 
